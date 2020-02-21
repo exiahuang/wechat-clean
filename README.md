@@ -1,7 +1,22 @@
 # wechat-clean
 
-[wechat-clean](https://github.com/exiahuang/wechat-clean)
+[exiahuang/wechat-clean](https://github.com/exiahuang/wechat-clean)
 清理微信视频，语音记录，不会删除聊天记录。可以指定删除n天前图片
+
+清理微信数据目录下n天前数据
+
+- $wechat_dir/Download
+- $wechat_dir/用户ID/voice2
+- $wechat_dir/用户ID/emoji
+- $wechat_dir/用户ID/image2
+- $wechat_dir/用户ID/attachment
+- $wechat_dir/用户ID/sns
+- $wechat_dir/用户ID/avatar
+- $wechat_dir/用户ID/favorite
+- $wechat_dir/用户ID/openapi
+
+删除所有的
+- $wechat_dir/xlog
 
 ## download
 
