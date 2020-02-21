@@ -17,24 +17,24 @@ chmod 770 wechat-clean.sh
 
 ```sh
 echo "删除8天"
-clear_wechat /sdcard/tencent/MicroMsg 8
+./wechat-clean.sh clear_wechat /sdcard/tencent/MicroMsg 8
 echo "检查存储空间"
-check_disk /sdcard/tencent/MicroMsg
+./wechat-clean.sh check_disk /sdcard/tencent/MicroMsg
 
 ```
 
 
-`三星`多开
+`三星`多开用户
 
 ```sh
-clear_wechat /sdcard/DualApp/tencent/MicroMsg/ 8
-check_disk /sdcard/DualApp/tencent/MicroMsg/
+./wechat-clean.sh clear_wechat /sdcard/DualApp/tencent/MicroMsg/ 8
+./wechat-clean.sh check_disk /sdcard/DualApp/tencent/MicroMsg/
 ```
 
 
 使用`parallel_lite`的用户
 
 ```sh
-clear_wechat /mnt/sdcard/parallel_lite/0/tencent/MicroMsg 8
-check_disk /mnt/sdcard/parallel_lite/0/tencent/MicroMsg
+./wechat-clean.sh clear_wechat /mnt/sdcard/parallel_lite/0/tencent/MicroMsg 8
+./wechat-clean.sh check_disk /mnt/sdcard/parallel_lite/0/tencent/MicroMsg
 ```
