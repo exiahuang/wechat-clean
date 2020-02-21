@@ -1,3 +1,4 @@
+#!/bin/bash
 # 清理微信视频，语音记录，不会删除聊天记录。可以指定删除n天前图片
 # author: exia.huang
 
@@ -60,7 +61,14 @@ function clear_sub_wechat_data() {
 }
 
 function check_disk() {
+    if [ -z "$1" ]
+    then
+        echo "please input path"
+        return
+    fi
 	echo "storage:"
 	du -sh $1/* | sort -n
 	echo "check_disk done"
 }
+
+$*
